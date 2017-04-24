@@ -1,0 +1,19 @@
+
+[winservers]
+192.168.152.132
+192.168.152.163
+
+[winserver2008]
+192.168.152.132
+
+[winserver2012]
+192.168.152.163
+
+
+[all:vars]
+ansible_ssh_user=administrator
+ansible_ssh_pass={{ win_pass }}
+ansible_ssh_port=5985
+ansible_connection=winrm
+
+
